@@ -6,9 +6,15 @@
     font-weight: 900;
 }
 
-a:link {
-    text-decoration: none;
+.link {
+    text-decoration: none !important;
 }
+
+#wrapper_skinny {
+	width: 50% !important;
+	margin: 0 auto;
+}
+
 
 * { box-sizing: border-box; }
 .video-background {
