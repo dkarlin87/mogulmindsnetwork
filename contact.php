@@ -5,11 +5,8 @@ $from = 'Demo contact form <demo@domain.com>';
 
 $sendTo = 'Dan Karlin <dankarlin@soolmedia.com>';
 
-// subject of the email
 $subject = 'New message from contact form';
 
-// form field names and their translations.
-// array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
 
 
@@ -52,7 +49,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 
     echo $encoded;
 }
-
+// else just display the message
 else {
     echo $responseArray['message'];
 }
