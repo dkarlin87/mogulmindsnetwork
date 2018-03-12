@@ -1,13 +1,17 @@
 <?php
 
+$from = 'Dan Karlin <dlkventuresllc@gmail.com>';
 
-$from = 'Demo contact form <demo@domain.com>';
-
-$sendTo = 'Dan Karlin <dankarlin@soolmedia.com>';
+$sendTo = 'Dan Karlin <dlkventuresllc@gmail.com>';
 
 $subject = 'New message from contact form';
 
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+
+$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+
+$errorMessage = 'There was an error while submitting the form. Please try again later';
+
 
 
 error_reporting(E_ALL & ~E_NOTICE);
@@ -20,7 +24,6 @@ try
     $emailText = "You have a new message from your contact form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
-        // If the field exists in the $fields array, include it in the email 
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
         }
@@ -42,6 +45,7 @@ catch (\Exception $e)
 }
 
 
+// if requested by AJAX request return JSON response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
