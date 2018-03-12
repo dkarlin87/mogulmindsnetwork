@@ -1,12 +1,8 @@
 <?php
-/*
- *  CONFIGURE EVERYTHING HERE
- */
 
-// an email address that will be in the From field of the email.
+
 $from = 'Demo contact form <demo@domain.com>';
 
-// an email address that will receive the email with the output of the form
 $sendTo = 'Dan Karlin <dankarlin@soolmedia.com>';
 
 // subject of the email
@@ -56,7 +52,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 
     echo $encoded;
 }
-// else just display the message
+
 else {
     echo $responseArray['message'];
 }
