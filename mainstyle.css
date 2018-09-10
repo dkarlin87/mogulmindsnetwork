@@ -11,8 +11,14 @@ body {
     min-height: 100%;
 }
 
+
+
+
+
 #banner{
-    opacity: 0.85;
+  opacity: 0.85;
+  margin-top: 75px;
+  margin-bottom: 0px;
 }
 
 #banner h2 {
@@ -27,7 +33,6 @@ body {
 	width: 50% !important;
 	margin: 0 auto;
 }
-
 
 
 
