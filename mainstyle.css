@@ -3,10 +3,14 @@ body {
 
 }
 
+.navbar-fixed-top {
+    height: 80px !important;
+}
+
 
 .firstbanner {
-  margin-top: 120px !important;
-  background-image: url("https://previews.123rf.com/images/hugolacasse/hugolacasse1101/hugolacasse110100302/8698041-ville-silhouette-r%C3%A9flexion.jpg");
+  margin-top: 60px !important;
+  background-image: url("pages/img/skyline1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   
