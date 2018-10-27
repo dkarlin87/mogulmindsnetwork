@@ -10,7 +10,7 @@ body {
 
 .firstbanner {
   margin-top: 150px !important;
-  background-image: url("pages/img/skyline1.jpg");
+  background-image: url("https://www.aspenideas.org/sites/default/files/images/ChicagoSkylineBW_card.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   
@@ -48,6 +48,10 @@ body {
   padding: 0 15px;
   height: 80px;
   line-height: 80px;
+}
+
+#buttons {
+  margin-top: 15px;
 }
 
 .navbar-toggle {
