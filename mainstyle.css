@@ -8,7 +8,7 @@ body {
   margin-top: 120px !important;
   background-image: url("https://previews.123rf.com/images/hugolacasse/hugolacasse1101/hugolacasse110100302/8698041-ville-silhouette-r%C3%A9flexion.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
   
 }
 
@@ -37,6 +37,7 @@ body {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
+    min-height: 95px !important;
 }
 
 .navbar-nav li a {
