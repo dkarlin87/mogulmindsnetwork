@@ -9,8 +9,8 @@
                 controller  : 'mainController'
             })
 
-            .when('/projects', {
-                templateUrl : 'pages/projects.html',
+            .when('/podcasts', {
+                templateUrl : 'pages/podcasts.html',
                 controller  : 'projectsController'
             })
 
@@ -24,7 +24,7 @@
         $scope.message = 'Everyone come and see how good I look!';
     });
 
-    soolApp.controller('projectsController', function($scope) {
+    soolApp.controller('podcastsController', function($scope) {
         $scope.message = 'Look! I am an about page.';
     });
 
