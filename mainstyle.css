@@ -1,4 +1,5 @@
 body {
+  font-family: 'Noto Sans', sans-serif !important;
   background-color: #fff;
   background-image: url("pages/img/bgblack.jpg");
   background-attachment: fixed;
