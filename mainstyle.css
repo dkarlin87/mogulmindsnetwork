@@ -9,7 +9,7 @@ body {
 
 
 .firstbanner {
-  margin-top: 60px !important;
+  margin-top: 100px !important;
   background-image: url("pages/img/skyline1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -38,6 +38,10 @@ body {
 
 .navbar {
   min-height: 80px;
+}
+
+.navbar-nav {
+  top: 50%;
 }
 
 .navbar-brand {
