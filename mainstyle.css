@@ -1,5 +1,8 @@
 body {
   background-color: #fff;
+  background-image: url("pages/img/bgblack.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
 
 }
 
@@ -10,17 +13,18 @@ body {
 
 
 .firstbanner {
-  margin-top: 150px !important;
-  background-image: url("https://www.aspenideas.org/sites/default/files/images/ChicagoSkylineBW_card.jpg");
-  background-repeat: no-repeat;
+  margin-top: 100px !important;
+  background-color: #2a2b2d;
   background-size: 100%;
   
 }
 
 
 #banner{
-  opacity: 0.85;
   margin-top: 25px;
+  background-color: #2a2b2d;
+  opacity: 0.95;
+  color: #b3b3b5;
   margin-bottom: 0px;
 }
 
@@ -114,4 +118,12 @@ body {
 
 .projectinfo.ng-hide {
   opacity:0;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
