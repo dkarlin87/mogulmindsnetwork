@@ -3,8 +3,8 @@
      <html ng-app="soolApp">
     <head>
     <link rel="stylesheet" type="text/css" href="mainstyle.css">   
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
@@ -22,17 +22,18 @@
 </div>
 
     <header>
-            <nav class="navbar-fixed-top navbar-inverse navbar-custom">
+            <nav class="navbar-fixed-top navbar-inverse navbar-expand-md">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img width="60px" vertical-align="center" src="pages/img/logonobg.png"></a>
+                    <a class="navbar-brand" href="#"><img width="60px" vertical-align="center" src="pages/img/logonav.png"></a>
                 </div>
 
                 <ul id="buttons" class="nav navbar-nav navbar-right">
                     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="#podcasts"><i class="fa fa-podcast"></i> Podcasts</a></li>
+                    <li><a href="#sponsors"><i class="fa fa-mouse-pointer"></i> Sponsors</a></li>
                     <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
-                    <li><a href="#"><i class="far fa-money-bill-alt"></i> Patreon</a></li>
+                    <li><a href="#"><i class="fa fa-money"></i> Patreon</a></li>
                 </ul>
             </div>
             </nav>
@@ -43,7 +44,18 @@
         <div ng-view></div>
 
     </div>
+    
+<div id="banner" class="jumbotron">
+   
+    <ul class="list-inline banner-social-buttons" align="center">
+        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a></li>
+        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">YouTube</span></i></a></li>
 
+    </ul>
+
+</div>
 
     </body>
 

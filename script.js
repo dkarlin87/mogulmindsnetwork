@@ -17,7 +17,14 @@
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
-            });
+            })
+            
+            .when('/sponsors', {
+                templateUrl : 'pages/sponsors.html',
+                controller  : 'sponsorsController'
+            })
+            
+            ;
     });
 
     soolApp.controller('mainController', function($scope) {
@@ -30,4 +37,8 @@
 
     soolApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
+    });
+   
+    soolApp.controller('sponsorsController', function($scope) {
+        $scope.message = 'Thank you thank you thank you.';
     });

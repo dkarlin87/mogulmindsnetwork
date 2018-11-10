@@ -1,25 +1,45 @@
 body {
   font-family: 'Noto Sans', sans-serif !important;
-  background-color: #fff;
-  background-image: url("pages/img/bgblack.jpg");
+  background-color: black;
+  background-image: url("https://c1.staticflickr.com/3/2819/10825587946_840962b1d4_b.jpg");
   background-attachment: fixed;
   background-size: 100%;
 
 }
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
 
 .navbar-fixed-top {
     height: 80px !important;
 }
 
-
+.banner {
+  
+  background-color: #222 !important;
+}
 .firstbanner {
   margin-top: 100px !important;
-  background-color: #2a2b2d;
+  background-color: #222;
   background-size: 100%;
   
 }
 
+input[type=text] {
+    width: 33%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 
 #banner{
   margin-top: 25px;
